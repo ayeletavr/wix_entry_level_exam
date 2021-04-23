@@ -1,0 +1,3 @@
+examKey=23
+createdAt=2/27/2021
+candidateEmail=ayelet.avraham@mail.huji.ac.il

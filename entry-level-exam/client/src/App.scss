@@ -1,0 +1,154 @@
+:root {
+	--text-color: black;
+	--title-color: #09077c;
+	--background-color: #d9e7f8;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+
+	background-color: var(--background-color);
+	padding-top: 100px;
+	padding: 50px;
+
+	main {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-weight: 300;
+	}
+
+	.ticket-list {
+		color: #09077c;
+	}
+
+	.search {
+		color: #09077c;
+	}
+
+	.results {
+		color: #09077c;
+		font-size: 12px;
+		margin: 12px 5px;
+	}
+
+	.label {
+		background-color: #d9e7f8;
+		border: 0.5px solid #09077c
+	}
+
+	.label:hover {
+		background-color: #09077c;
+		color: #fff;
+	}
+
+	.hide-button {
+		background-color: #d9e7f8;
+		border-radius: 8px;
+		border: 1px solid #09077c;
+		float: right;
+	}
+
+	.sort-button {
+		background-color: white;
+		border: 1 px solid black;
+		border-radius: 4px;
+		color: black;
+
+	}
+
+	.next-page {
+		background-color: #b1b1b1;
+		color: white;
+		border: none;
+		border-radius: 4px;
+	}
+	.previous-page {
+		background-color: #b1b1b1;
+		color: white;
+		border: none;
+		border-radius: 4px;
+	}
+
+	header {
+		width: 100%;
+		flex-shrink: 0;
+		border-radius: 6px;
+		background-color: #fff;
+		box-shadow: 0 2px 6px 1px #e1e5e8;
+		margin-bottom: 14px;
+		display: flex;
+		flex-direction: column;
+		border: 1px solid #fff;
+		padding: 10px 20px;
+		position: relative;
+
+		input {
+			width: 100%;
+			text-overflow: ellipsis;
+			display: inline-block;
+			color: var(--text-color);
+			font-size: 14px;
+			outline: 0;
+			transition: border .1s ease;
+			resize: none;
+			border: none;
+
+			&::placeholder  {
+				color: #b6c1cd;
+			}
+		}
+	}
+
+	a {
+		color: var(--text-color);
+		cursor: pointer;
+		font-weight: 500;
+		font-size: 12px;
+	}
+
+	.tickets {
+
+		margin: 0;
+		padding: 0;
+
+		.ticket {
+			overflow: hidden;
+			height: 150px;
+			width: calc(50% - 70px);
+			margin: 15px;
+			display: inline-block;
+			padding: 10px 20px;
+			position: relative;
+			background-color: #fff;
+			box-shadow: 0 2px 6px 1px #e1e5e8;
+
+			&:hover {
+				box-shadow: 0 2px 6px 1px #d3d7da;
+			}
+
+			.title {
+				margin: 15px 0;
+				font-size: 16px;
+				font-weight: 400;
+				font-style: normal;
+				color: var(--title-color);
+			}
+
+			footer {
+
+				display: flex;
+				justify-content: space-between;
+
+				.meta-data {
+					color: #5e5e5e;
+					font-size: 12px;
+					margin: 10px 0;
+					flex-shrink: 0;
+				}
+			}
+		}
+	}
+}
